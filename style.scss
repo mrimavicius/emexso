@@ -1,0 +1,260 @@
+/* Remtasi: https://themehoster.com/tf/html/tm/emexso/demo/index.html# */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Barlow;
+}
+
+header {
+    font-weight: 500;
+
+    .container {
+        display: flex;
+        max-width: 1024px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    a {
+        color: #243556;
+        text-decoration: none;
+        padding: 10px;
+
+        i {
+            color: #fb634b;
+            padding: 5px;     
+        }
+
+    }
+
+    .right {
+        i {
+            color:#fb634b;
+            border: 1px solid #fb634b;
+            padding: 10px;
+            line-height: 20px;
+            width: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 5px;
+
+            &:hover {
+                cursor: pointer;
+                background: #fb634b;
+                color: white;
+            }
+        }
+    }
+    
+}
+
+.container {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    padding-bottom: 15px;
+}
+
+hr {
+    max-width: 1024px;
+    margin: auto;
+    border: 1px solid #eee;
+}
+
+nav {    
+    img {
+        padding: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        padding: 8px;
+        color: #505050;
+    }
+
+}
+
+button {
+    padding: 10px;
+    width: 125px;
+    margin: 15px;
+    margin-left: 0;
+    border: 1px solid #fb634b;
+    border-radius: 5px;
+    background: #fb634b;
+    color: white;
+    font-weight: 600;
+
+    &:hover {
+        background: transparent;
+        color: #fb634b;
+    }
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    background: #fbd7b5;
+    display: flex;
+
+    img {
+        margin: 75px 0;
+        width: 350px;
+        padding: 50px;
+        animation-name: up-down;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes up-down {
+        0% {transform: translateY(0)}
+        50% {transform: translateY(10px)}
+        100% {transform: translateY(0px)}
+    }
+    
+    h4 {
+        color: #fb6c4e;
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: 4em;
+        color: #0c2461;
+        padding-bottom: 25px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: #0c2461;
+        line-height: 30px;
+    }
+
+    span {
+        color: #0c2461;
+        font-weight: 500;
+    }
+}
+
+.section-2 {
+    background: white;
+    padding-top: 150px;
+
+    .flex-right {
+        position: relative;
+
+        .img1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .img2 {
+            position: relative;
+            top: -25px;
+            left: 0;
+            animation-name: none;
+        }
+    }
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin-top: 30px;
+
+    i {
+        color: #fb6c4e;
+    }
+
+    p {
+        font-weight: 600;
+    }
+}
+
+.item2 {
+    margin-left: auto;
+}
+
+@media (max-width: 880px) {
+    header {
+        .container {
+            display: block;
+            text-align: center;
+        }
+
+        .left {
+            a {
+                display: block;
+            }
+        }
+    }
+
+    hr {
+        width: 350px;
+    }
+
+    nav {
+        .container {
+            justify-content: space-around;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    section {
+        .container {
+            display: block;
+            text-align: center;
+    }
+
+        p {
+            line-height: 40px;
+        }
+
+
+    }
+
+
+    .section-2 {
+    .flex-right {
+        .img1 {
+            position: relative;
+            top: -800px;
+            left: 0;
+            margin-bottom: -600px;
+        }
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        align-items: center;
+
+        .item2 {
+            margin: 0;
+        }
+    }
+}
+
+    .container {
+    span {
+        display: block;
+    }
+}
+
+    section button {
+    width: 80%;
+}
+}
